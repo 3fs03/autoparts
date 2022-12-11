@@ -1,3 +1,10 @@
+:root {
+  --black: #1b262c;
+  --blue: #0f4c75;
+  --ligh-blue: #3282b8;
+  --white: #bbe1fa;
+}
+
 html,
 body,
 div,
@@ -121,4 +128,45 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--white);
+}
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 100%;
+}
+nav {
+  width: 30%;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+ul a {
+  text-decoration: none;
+  color: var(--white);
+}
+ul a:hover {
+  color: white;
+}
+ul a:active {
+  color: var(--ligh-blue);
 }
