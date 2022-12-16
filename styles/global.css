@@ -1,10 +1,9 @@
 :root {
   --black: #1b262c;
   --blue: #0f4c75;
-  --ligh-blue: #3282b8;
+  --light-blue: #3282b8;
   --white: #bbe1fa;
 }
-
 html,
 body,
 div,
@@ -132,41 +131,79 @@ table {
 
 body {
   background-color: var(--blue);
-  color: var(--white);
+  color: var(--blue);
 }
 header {
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--black);
-  padding-left: 10%;
-  padding-right: 10%;
+  min-height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),var(--white)),url(/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
 }
 .logo {
-  height: 100%;
   display: flex;
   align-items: center;
+  height: 10px;
 }
-.logo img {
-  height: 100%;
-}
+
 nav {
-  width: 30%;
-}
-ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  padding: 2% 6%; 
 }
-ul a {
+nav img{
+width:180px;
+
+}
+.nav-links {
+  flex:1;
+  text-align:right;
+
+}
+.nav-links ul li{
+ display: inline-block;
+ padding: 8px 12px;
+ position: relative;
+}
+.nav-links ul a {
   text-decoration: none;
   color: var(--white);
 }
-ul a:hover {
+.nav-links ul li::after{
+  content: '';
+  width:0%;
+  height: 2px;
+  background:var(--white);
+  display: block;
+  margin:auto;
+  transition:0.4s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+
+}
+.nav-links ul a:hover {
   color: white;
 }
-ul a:active {
-  color: var(--ligh-blue);
+.nav-links ul a:active {
+  color: var(--light-blue);
+}
+.main-heading{
+ width:100%;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  text-align:center;
+}
+.main-heading h1{
+  font-size: 62px;
+
+}
+.main-heading p{
+ margin: 40px 10px;
+
 }
