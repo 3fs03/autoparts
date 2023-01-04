@@ -153,6 +153,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 2% 6%;
+  background-color: var(--black);
 }
 nav img {
   width: 180px;
