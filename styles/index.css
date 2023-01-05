@@ -56,7 +56,7 @@ header {
   margin-top: 10%;
   font-size: 60%;
 }
-.parts-video {
+.video-section {
   width: 100%;
   height: 100vh;
   background-color: var(--white);
@@ -65,13 +65,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-.parts-video p {
+.video-section p {
   margin-top: 2%;
   color: var(--black);
 }
-.video {
+.parts-video {
   width: 60%;
 }
-.video video {
+.parts-video video {
   width: 100%;
 }
