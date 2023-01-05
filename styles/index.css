@@ -63,7 +63,7 @@ header {
 .service p {
   height: 40%;
   margin-top: 10%;
-  font-size: 60%;
+  font-size: 1vw;
 }
 .video-section {
   width: 100%;
