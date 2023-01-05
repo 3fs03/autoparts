@@ -134,7 +134,6 @@ body {
   color: var(--white);
 }
 header {
-  min-height: 100vh;
   width: 100%;
 }
 .logo {
