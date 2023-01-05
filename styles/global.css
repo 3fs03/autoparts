@@ -130,7 +130,7 @@ table {
 }
 
 body {
-  background-color: var(--blue);
+  background-color: var(--black);
   color: var(--white);
 }
 header {
