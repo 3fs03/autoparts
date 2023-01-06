@@ -65,6 +65,10 @@ header {
 .search-bar .fa-search {
   align-self: center;
 }
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
 .services-section {
   margin: 0 auto;
   display: flex;
@@ -112,7 +116,19 @@ header {
 .parts-video video {
   width: 100%;
 }
-.search-bar {
+.social-media {
+  text-align: center;
+}
+.socials {
   display: flex;
-  justify-content: center;
+  width: 40%;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+.socials a {
+  text-decoration: none;
+  color: var(--white);
+}
+.socials a:hover {
+  color: var(--light-blue);
 }
