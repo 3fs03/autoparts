@@ -194,13 +194,38 @@ footer img {
   width: 5%;
 }
 footer h3 {
-  font-size: 2vw;
-  margin-top: 20px;
+  font-size: 1.5vw;
+  margin-top: 50px;
 }
 footer h4 {
   font-size: 1vw;
   margin-top: 10px;
   font-weight: 400;
+}
+.useful {
+  display: flex;
+  width: 80%;
+  margin: 40px auto;
+  justify-content: space-between;
+}
+.useful li {
+  font-size: 1vw;
+}
+.useful li:hover {
+  color: white;
+  cursor: pointer;
+}
+.useful li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--white);
+  display: block;
+  margin: auto;
+  transition: 0.4s;
+}
+.useful li:hover::after {
+  width: 100%;
 }
 .topg {
   margin-top: 50px;
