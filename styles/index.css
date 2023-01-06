@@ -41,22 +41,26 @@ header {
 .search-bar form {
   margin-top: 30px;
   display: flex;
-  width: 40%;
+  width: 30%;
   justify-content: center;
 }
 .search-bar input {
   border: none;
   outline: none;
   flex: 1;
+  text-indent: 1vw;
+  border-radius: 10px 0px 0px 10px;
 }
 .search-bar button {
-  background: var(--black);
+  background: var(--light-blue);
+  font-weight: 700;
   border: none;
   outline: none;
   cursor: pointer;
   color: var(--white);
   padding: 10px 50px;
   letter-spacing: 1px;
+  border-radius: 0px 10px 10px 0px;
 }
 .search-bar .fa-search {
   align-self: center;
