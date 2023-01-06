@@ -6,21 +6,19 @@ main {
 .content h3 {
   text-align: center;
   font-size: 30px;
-  margin: 0;
   padding-top: 10px;
 }
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   justify-content: center;
-  align-items: center;
   margin: 50px 0px;
 }
 .content {
   width: 20%;
   margin: 15px;
-  float: left;
+  height: 348px;
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
@@ -74,23 +72,23 @@ main {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   background-color: white;
-} 
-.filters{
+}
+.filters {
   display: flex;
   background-color: var(--blue);
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 10%;
-  height:25vh;
+  height: 300px;
   border-radius: 20px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  margin: 80px 15px 0;
+  margin: 65px 15px 0;
 }
-.filters select{
-width:100%;
-
+.filters select {
+  width: 100%;
 }
-.filters input{
+.filters input {
   background: var(--light-blue);
   font-weight: 300;
   border: none;
