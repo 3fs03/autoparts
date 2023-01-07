@@ -1,2 +1,5 @@
-
-//Trqbva da se izmisli da go premestq ot index.html tuka
+hamburger = document.querySelector(".hamburger");
+function ResponsiveNav() {
+navbar= document.querySelector(".nav-links");
+navbar.classList.toggle("active");
+}
