@@ -87,9 +87,6 @@ main {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 65px 15px 0;
 }
-.filters select {
-  width: 100%;
-}
 .filters input {
   background: var(--light-blue);
   font-weight: 300;

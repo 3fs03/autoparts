@@ -23,21 +23,33 @@
       src="https://kit.fontawesome.com/07de6ff29f.js"
       crossorigin="anonymous"
     ></script>
+    <script src ="./Scripts/global.js"> </script>
   </head>
   <body>
     <header>
       <nav>
         <a class="logo" href="index.html"
-          ><img src="./images/logo.png" alt="AutoParts Logo"
-        /></a>
+          ><img src="./images/logo.png" alt="AutoParts Logo"/></a>
+          <div class="hamburger" id="hamb">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         <div class="nav-links">
           <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html" class="active">Home</a></li>
             <li><a href="./products.html">Products</a></li>
             <li><a href="./login.html">Login</a></li>
           </ul>
         </div>
       </nav>
+      <script>
+        hamburger = document.querySelector(".hamburger");
+hamburger.onclick = function() {
+    navBar = document.querySelector(".nav-links");
+    navBar.classList.toggle("active");
+}
+      </script>
       <div class="main-header">
         <div class="main-black"></div>
         <div class="main-heading">

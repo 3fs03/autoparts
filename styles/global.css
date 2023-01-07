@@ -139,7 +139,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  height: 10px;
+  height: 10vh;
 }
 nav {
   display: flex;
@@ -181,6 +181,70 @@ nav img {
 }
 .nav-links ul a:active {
   color: var(--light-blue);
+}
+.hamburger{
+  display: none;
+}
+@media only screen and (max-width:1320px) {
+  nav{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .logo img{
+    height:3em;
+  }
+}
+@media only screen and (max-width:1100px) {
+  nav{
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+  .logo img{
+    height:2em;
+  }
+  nav ul li a{
+    font-size:0.8em;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .logo img{
+    height:7.5vh;
+    width:18vh;
+  }
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line{
+    width: 25px;
+    height:3px;
+    background:white;
+    margin:5px 0;
+  }
+  .nav-links.active{
+    height:400px;
+  }
+  .nav-links{
+    height:0;
+    position: absolute;
+    left:0;
+    top:12vh;
+    width: 100%;
+    background-color: var(--light-blue);
+    z-index: 999;
+    text-align:center; 
+    transition: 0.2s; 
+    overflow:hidden;
+  }
+  .nav-links ul li{
+    display: block;
+    margin-top:10%;
+  }
+  .nav-links ul li:hover::after {
+    width: 30%;
+  }
+  
 }
 footer {
   width: 100%;
