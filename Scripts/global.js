@@ -1,7 +1,2 @@
 
-hamburger = document.getElementsByClassName(".hamburger");
-hamburger.onclick = function() {
-    navBar = document.getElementsByClassName(".nav-links");
-    navBar.classList.toggle("active");
-}
-
+//Trqbva da se izmisli da go premestq ot index.html tuka

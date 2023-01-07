@@ -94,7 +94,7 @@ header {
 .service p {
   height: 40%;
   margin-top: 10%;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 .video-section {
   width: 100%;
@@ -131,4 +131,55 @@ header {
 }
 .socials a:hover {
   color: var(--light-blue);
+}
+@media only screen and (max-width:1100px) {
+
+  .service-img{
+    height:35%;
+  }
+  .service p{
+    font-size: 2vw;
+
+  }
+  .video-section p{
+    font-size: 3vw;
+   }
+   .video-section{
+    height:50%;
+   }
+}
+@media only screen and (max-width:750px) {
+
+  .service-img{
+    height:25%;
+  }
+  .service p{
+    font-size: 2.5vw;
+
+  }
+  .main-heading h1 {
+    font-size: 12vw;
+  }
+  .main-heading p {
+    margin-top: 5%;
+    font-size: 4vw;
+  }
+  .video-section{
+    height:60%;
+  }
+  .parts-video {
+    width: 80%;
+  }
+  .video-section p{
+   font-size: 3.5vw;
+  }
+  .social-media p {
+    font-size:5vw;
+  }
+  .socials{
+    height:0.8vh;
+  }
+  .socials i{
+    font-size:3vh;
+  }
 }
