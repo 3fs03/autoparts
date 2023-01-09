@@ -309,7 +309,7 @@ footer h4 {
   }
   .nav-links ul li {
     display: block;
-    margin-top:5vh;
+    margin-top: 5vh;
   }
   .nav-links ul li:hover::after {
     width: 30%;
@@ -330,15 +330,15 @@ footer h4 {
   }
 }
 @media only screen and (max-width: 489px) {
-  .nav-links{
-    top:7.8vh;
+  .nav-links {
+    top: 7.8vh;
   }
-  .useful{
+  .useful {
     flex-direction: column;
-    font-size:15vw;
-    margin:30px auto;
+    font-size: 15vw;
+    margin: 30px auto;
   }
-  .useful li{
+  .useful li {
     margin-top: 5vw;
   }
 }
