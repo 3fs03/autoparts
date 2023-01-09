@@ -276,7 +276,7 @@ footer h4 {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   .logo {
     height: 6vh;
   }
@@ -294,13 +294,13 @@ footer h4 {
     margin: 5px 0;
   }
   .nav-links.active {
-    height: 350px;
+    height: 40vh;
   }
   .nav-links {
     height: 0;
     position: absolute;
     left: 0;
-    top: 12vh;
+    top: 8vh;
     width: 100%;
     background-color: var(--light-blue);
     z-index: 999;
@@ -310,7 +310,7 @@ footer h4 {
   }
   .nav-links ul li {
     display: block;
-    margin-top: 10%;
+    margin-top:5vh;
   }
   .nav-links ul li:hover::after {
     width: 30%;
@@ -328,5 +328,10 @@ footer h4 {
   .useful li {
     font-size: 23%;
     margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 489px) {
+  .nav-links{
+    top:7.8vh;
   }
 }
