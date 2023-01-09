@@ -43,31 +43,67 @@
     </header>
     <main>
       <form action="./index.html" method="post">
+        <h1>Products</h1>
         <section class="product-section">
-          <div class="product-image">
-            <img src="./images/products/clutch.jpg" alt="clutch" />
+          <div class="product">
+            <div class="product-image">
+              <img src="./images/products/clutch.jpg" alt="clutch" />
+            </div>
+            <div class="product-info">
+              <h2>Clutch</h2>
+              <p>Sed vel nisl varius, ornare quam et, auctor est.</p>
+              <p class="product-price">120,00$</p>
+              <ul>
+                <li>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star-o"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="product-actions">
+              <input type="number" name="count" id="count" min="1" value="1" />
+              <button><i class="fa-solid fa-trash"></i></button>
+            </div>
           </div>
-          <div class="product-info">
-            <h2>Clutch</h2>
-            <p>Sed vel nisl varius, ornare quam et, auctor est.</p>
-            <p class="product-price">120,00$</p>
-            <ul>
-              <li>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star checked"></i>
-                <i class="fa fa-star-o"></i>
-              </li>
-            </ul>
+          <div class="product">
+            <div class="product-image">
+              <img
+                src="./images/products/mastercylinder.jpg"
+                alt="Master Cylinder"
+              />
+            </div>
+            <div class="product-info">
+              <h2>Master cylidner</h2>
+              <p>Sed vel nisl varius, ornare quam et, auctor est.</p>
+              <p class="product-price">100,00$</p>
+              <ul>
+                <li>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="product-actions">
+              <input type="number" name="count" id="count" min="1" value="1" />
+              <button><i class="fa-solid fa-trash"></i></button>
+            </div>
           </div>
-          <div class="vertical-line"></div>
-          <div class="product-actions">
-            <input type="number" name="count" id="count" min="1" />
-            <button><i class="fa-solid fa-trash"></i></button>
+          <div class="total">
+            <p>Total:</p>
+            <p class="product-price">220,00$</p>
           </div>
         </section>
+        <h1>Delivery Information</h1>
         <section class="info-section"></section>
+        <h1>Payment Information</h1>
         <section class="payment-section"></section>
       </form>
     </main>
