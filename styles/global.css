@@ -139,7 +139,10 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  height: 10vh;
+  height: 12vh;
+}
+.logo img {
+  height: 12vh;
 }
 nav {
   display: flex;
@@ -147,9 +150,6 @@ nav {
   align-items: center;
   padding: 2% 6%;
   background-color: var(--black);
-}
-nav img {
-  width: 180px;
 }
 .nav-links {
   flex: 1;
@@ -182,10 +182,9 @@ nav img {
 .nav-links ul a:active {
   color: var(--light-blue);
 }
-.hamburger{
+.hamburger {
   display: none;
 }
-
 footer {
   width: 100%;
   min-height: 40vh;
@@ -235,91 +234,99 @@ footer h4 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-@media only screen and (max-width:1320px) {
-  nav{
+@media only screen and (max-width: 1320px) {
+  nav {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .logo img{
-    height:3em;
+  .logo {
+    height: 10vh;
+  }
+  .logo img {
+    height: 10vh;
   }
 }
-@media only screen and (max-width:1100px) {
-  nav{
-    padding-left: 0px;
+@media only screen and (max-width: 1100px) {
+  nav {
+    padding-left: 30px;
     padding-right: 30px;
   }
-  .logo img{
-    height:2em;
+  .logo {
+    height: 8vh;
   }
-  nav ul li a{
-    font-size:0.8em;
+  .logo img {
+    height: 8vh;
   }
-  footer h3{
-    font-size:50%;
+  nav ul li a {
+    font-size: 0.8em;
   }
-  .topg h4{
-    font-size:35%;
+  footer h3 {
+    font-size: 50%;
+  }
+  .topg h4 {
+    font-size: 35%;
     font-weight: 500;
   }
-  footer img{
+  footer img {
     width: 10%;
   }
-  .useful li{
-    font-size:40%;
-    margin-right:5px;
+  .useful li {
+    font-size: 40%;
+    margin-right: 5px;
   }
 }
 
-@media only screen and (max-width:700px) {
-  .logo img{
-    height:7.5vh;
-    width:18vh;
+@media only screen and (max-width: 700px) {
+  .logo {
+    height: 6vh;
   }
-  .hamburger{
+  .logo img {
+    height: 6vh;
+  }
+  .hamburger {
     display: block;
     cursor: pointer;
   }
-  .hamburger .line{
+  .hamburger .line {
     width: 25px;
-    height:3px;
-    background:white;
-    margin:5px 0;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
   }
-  .nav-links.active{
-    height:350px;
+  .nav-links.active {
+    height: 350px;
   }
-  .nav-links{
-    height:0;
+  .nav-links {
+    height: 0;
     position: absolute;
-    left:0;
-    top:12vh;
+    left: 0;
+    top: 12vh;
     width: 100%;
     background-color: var(--light-blue);
     z-index: 999;
-    text-align:center; 
-    transition: 0.2s; 
-    overflow:hidden;
+    text-align: center;
+    transition: 0.2s;
+    overflow: hidden;
   }
-  .nav-links ul li{
+  .nav-links ul li {
     display: block;
-    margin-top:10%;
+    margin-top: 10%;
   }
   .nav-links ul li:hover::after {
     width: 30%;
   }
-  footer h3{
-    font-size:30%;
+  footer h3 {
+    font-size: 30%;
   }
-  .topg h4{
-    font-size:25%;
+  .topg h4 {
+    font-size: 25%;
     font-weight: 500;
   }
-  footer img{
+  footer img {
     width: 12%;
   }
-  .useful li{
-    font-size:23%;
-    margin-right:5px;
+  .useful li {
+    font-size: 23%;
+    margin-right: 5px;
   }
 }

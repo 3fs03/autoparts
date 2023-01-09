@@ -6,7 +6,8 @@ main {
 .content h3 {
   text-align: center;
   font-size: 30px;
-  padding-top: 10px;
+  margin-top: 10px;
+  height: 70px;
 }
 .gallery {
   display: flex;
@@ -17,8 +18,8 @@ main {
 }
 .content {
   width: 20%;
-  margin: 15px;
-  height: 348px;
+  margin: 30px 15px;
+  height: 374px;
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
@@ -49,9 +50,8 @@ main {
   font-weight: 900;
   margin-top: 10px;
 }
-
 .fa {
-  font-size:26px;
+  font-size: 26px;
   margin: 10px 0px;
 }
 .fa:hover {
