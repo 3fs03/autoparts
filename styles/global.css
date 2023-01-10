@@ -141,9 +141,12 @@ body.active{
 }
 .fa-moon{
   font-size:2.5vw;
+  cursor: pointer;
 }
+
 .fa-sun{
   font-size:2.5vw;
+  cursor: pointer;
 }
 header {
   width: 100%;
@@ -176,7 +179,7 @@ nav {
   text-decoration: none;
   color: var(--white);
 }
-.nav-links ul li::after {
+.nav-links ul li:not(:first-child):after{
   content: "";
   width: 0%;
   height: 2px;
@@ -185,7 +188,7 @@ nav {
   margin: auto;
   transition: 0.4s;
 }
-.nav-links ul li:hover::after {
+.nav-links ul li:hover::after{
   width: 100%;
 }
 .nav-links ul a:hover {
