@@ -34,6 +34,7 @@
         </div>
         <div class="nav-links">
           <ul>
+            <li><i class="fa-solid fa-moon" id="toggleDark"></i></li>
             <li><a href="./index.html" class="active">Home</a></li>
             <li><a href="./products.html">Products</a></li>
             <li><a href="./checkout.html">Checkout</a></li>
@@ -104,8 +105,8 @@
         <h1>Delivery Information</h1>
         <section class="info-section">
           <div class="person-info">
-            <div class="container-1">
-              <div class="container-1-1">
+            <div class="container">
+              <div class="container">
                 <label for="first_name">First Name<sup>*</sup></label>
                 <input
                   type="text"
@@ -115,7 +116,7 @@
                   required
                 />
               </div>
-              <div class="container-1-2">
+              <div class="container">
                 <label for="last_name">Last Name<sup>*</sup></label>
                 <input
                   type="text"
@@ -126,8 +127,8 @@
                 />
               </div>
             </div>
-            <div class="container-2">
-              <div class="container-2-1">
+            <div class="container">
+              <div class="container">
                 <label for="number">Phone Number<sup>*</sup></label>
                 <input
                   type="tel"
@@ -137,7 +138,7 @@
                   required
                 />
               </div>
-              <div class="container-2-2">
+              <div class="container">
                 <label for="email">E-mail<sup>*</sup></label>
                 <input
                   type="email"
@@ -149,10 +150,9 @@
               </div>
             </div>
           </div>
-          <div class="horizontal-line"></div>
           <div class="address">
-            <div class="container-1">
-              <div class="container-1-1">
+            <div class="container">
+              <div class="container">
                 <label for="city">City<sup>*</sup></label>
                 <select name="city" id="city" required>
                   <option value="null">Choose city</option>
@@ -172,19 +172,21 @@
                   <option value="veliko_tarnovo">Veliko Tarnovo</option>
                 </select>
               </div>
-              <div class="container-1-2">
+              <div class="container">
                 <label for="post_code">Post Code<sup>*</sup></label>
                 <input
                   type="number"
                   name="post_code"
                   id="post_code"
                   placeholder="1234"
+                  min="1000"
+                  max="9999"
                   required
                 />
               </div>
             </div>
-            <div class="container-2">
-              <div class="container-2-1">
+            <div class="container">
+              <div class="container">
                 <label for="boulevard">Boulevard<sup>*</sup></label>
                 <input
                   type="text"
@@ -194,7 +196,7 @@
                   required
                 />
               </div>
-              <div class="container-2-2">
+              <div class="container">
                 <label for="street">Street<sup>*</sup></label>
                 <input
                   type="text"
@@ -208,7 +210,54 @@
           </div>
         </section>
         <h1>Payment Information</h1>
-        <section class="payment-section"></section>
+        <section class="payment-section">
+          <div class="payment-info">
+            <div class="container">
+              <div class="container">
+                <label for="card-number">Credit Card Number<sup>*</sup></label>
+                <input
+                  type="text"
+                  name="card-number"
+                  id="card-number"
+                  required
+                />
+              </div>
+            </div>
+            <div class="container container-row">
+              <div class="container">
+                <label for="expire">Expiration Date<sup>*</sup></label>
+                <input type="text" name="expire" id="expire" required />
+              </div>
+              <div class="container">
+                <label for="cvc">CVC<sup>*</sup></label>
+                <input
+                  type="text"
+                  name="cvc"
+                  id="cvc"
+                  min="100"
+                  max="999"
+                  required
+                />
+              </div>
+            </div>
+            <div class="container">
+              <div class="container">
+                <label for="name">NAME ON THE CARD<sup>*</sup></label>
+                <input type="text" name="name" id="name" required />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="purchase-section">
+          <div>
+            <input type="checkbox" name="eula" id="eula" required />
+            <label for="eula"
+              >Consent the
+              <span class="terms">Terms and Conditions<sup>*</sup></span></label
+            >
+          </div>
+          <input type="submit" value="Purchase" class="purchase" />
+        </section>
       </form>
     </main>
     <footer>
@@ -231,5 +280,6 @@
         <h4>Жоро Димитров | 2201681042</h4>
       </div>
     </footer>
+    <script src="./scripts/DarkMode.js"></script>
   </body>
 </html>
