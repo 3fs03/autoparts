@@ -3,7 +3,7 @@
   --blue: #0f4c75;
   --light-blue: #3282b8;
   --white: #bbe1fa;
-  --permanent-white:#bbe1fa;
+  --permanent-white: #bbe1fa;
 }
 html,
 body,
@@ -129,24 +129,55 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 body {
   background-color: var(--black);
   color: var(--white);
 }
-body.active{
+body.active {
   --black: #bbe1fa;
   --blue: #3282b8;
   --light-blue: #0f4c75;
   --white: #1b262c;
 }
-.fa-moon{
-  font-size:2.5vw;
+select {
+  border: none;
+  border-radius: 0.25em;
+  color: #1b262c;
+  line-height: 1.1;
+  background-color: #bbe1fa;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  outline: none;
+  overflow-y: auto;
+}
+select option {
+  overflow-y: scroll;
+}
+input {
+  background-color: #bbe1fa;
+  color: #1b262c;
+}
+input:focus {
+  outline: none;
+  filter: drop-shadow(0px 0px 10px #1b262c);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 2vh auto;
+}
+.container-row {
+  flex-direction: row;
+  width: 64%;
+  justify-content: space-between;
+}
+.fa-moon {
+  font-size: 2.5vw;
   cursor: pointer;
 }
-
-.fa-sun{
-  font-size:2.5vw;
+.fa-sun {
+  font-size: 2.5vw;
   cursor: pointer;
 }
 header {
@@ -180,7 +211,7 @@ nav {
   text-decoration: none;
   color: var(--white);
 }
-.nav-links ul li:not(:first-child):after{
+.nav-links ul li:not(:first-child):after {
   content: "";
   width: 0%;
   height: 2px;
@@ -189,7 +220,7 @@ nav {
   margin: auto;
   transition: 0.4s;
 }
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
   width: 100%;
 }
 .nav-links ul a:hover {
@@ -292,11 +323,11 @@ footer h4 {
     font-size: 40%;
     margin-right: 5px;
   }
-  .fa-moon{
-    font-size:3vw;
+  .fa-moon {
+    font-size: 3vw;
   }
-  .fa-sun{
-    font-size:3 vw;
+  .fa-sun {
+    font-size: 3 vw;
   }
 }
 
@@ -335,7 +366,7 @@ footer h4 {
   .nav-links ul li {
     display: block;
     margin-top: 1.5vh;
-    font-size:6vw;
+    font-size: 6vw;
   }
   .nav-links ul li:hover::after {
     width: 30%;
@@ -354,26 +385,24 @@ footer h4 {
     font-size: 23%;
     margin-right: 5px;
   }
-  .hamburger .line.active{
-    background:black;
+  .hamburger .line.active {
+    background: black;
   }
-  .fa-moon
-  {
-    font-size:4.5vw;
+  .fa-moon {
+    font-size: 4.5vw;
   }
-  .fa-sun{
-    font-size:4.5vw;
+  .fa-sun {
+    font-size: 4.5vw;
   }
-
 }
 @media only screen and (max-width: 489px) {
   .nav-links {
     top: 7.8vh;
   }
   .nav-links ul li {
-    font-size:7.5vw;
+    font-size: 7.5vw;
   }
-  .nav-links.active{
+  .nav-links.active {
     height: 45vh;
   }
   .useful {
@@ -385,11 +414,10 @@ footer h4 {
     margin-top: 5vw;
   }
 
-  .fa-moon
-  {
-    font-size:5.5vw;
+  .fa-moon {
+    font-size: 5.5vw;
   }
-  .fa-sun{
-    font-size:5.5vw;
+  .fa-sun {
+    font-size: 5.5vw;
   }
 }

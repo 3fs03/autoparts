@@ -138,42 +138,11 @@ sup {
 .payment-info input {
   font-size: 1.5vw;
   margin: 10px 0px;
-  background-color: #bbe1fa;
-  color: #1b262c;
-}
-.person-info input:focus,
-.address input:focus,
-.payment-info input:focus {
-  outline: none;
-  filter: drop-shadow(0px 0px 10px #1b262c);
 }
 .address select {
   width: 100%;
-  border: none;
-  border-radius: 0.25em;
-  color: #1b262c;
   font-size: 1.5vw;
-  line-height: 1.1;
-  background-color: #bbe1fa;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-  outline: none;
   margin: 1.5vh auto;
-  overflow-y: auto;
-}
-.address select option {
-  overflow-y: scroll;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 80%;
-  margin: 2vh auto;
-}
-.container-row {
-  flex-direction: row;
-  width: 64%;
-  justify-content: space-between;
 }
 .container-row input {
   width: 85%;
@@ -203,6 +172,6 @@ sup {
   filter: drop-shadow(0px 0px 10px #1b262c);
   cursor: pointer;
 }
-.fa{
+.fa {
   font-size: 1.5vw;
 }
