@@ -153,16 +153,16 @@ section {
   outline: none;
   margin: 1.5vh auto;
 }
-.first-name,
-.last-name,
-.number,
-.email {
+.container-1-1,
+.container-1-2,
+.container-2-1,
+.container-2-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.name,
-.other {
+.container-1,
+.container-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
