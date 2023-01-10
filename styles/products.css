@@ -14,7 +14,8 @@ main {
   flex-wrap: wrap;
   width: 90%;
   justify-content: center;
-  margin: 50px 0px;
+  align-items: center;
+  margin: 50px auto;
 }
 .content {
   width: 20%;
@@ -78,34 +79,42 @@ main {
 }
 .filters {
   display: flex;
-  background-color: var(--blue);
+  background: linear-gradient(to right, var(--light-blue), var(--blue));
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 10%;
-  height: 30vh;
-  border-radius: 20px;
+  width: 15%;
+  height: 50vh;
+  border-radius: 0px 20px 20px 0px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  margin: 80px 15px 0;
+  margin: 80px 0px;
 }
 .box select {
-  width: 90%;
-  background-color: var(--light-blue);
-  color: var(--white);
+  width: 100%;
   border: none;
+  border-radius: 0.25em;
+  color: var(--black);
   font-size: 1.2vw;
+  line-height: 1.1;
+  background-color: var(--white);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   outline: none;
+  margin: 1.5vh auto;
 }
 .filters input {
-  background: var(--light-blue);
+  background: var(--white);
   font-weight: 400;
+  font-size: 1.2vw;
   border: none;
   outline: none;
   cursor: pointer;
-  color: var(--white);
+  color: var(--black);
   letter-spacing: 1px;
-  border-radius: 10px;
+  border-radius: 5px;
+  margin-top: 5vh;
+}
+.filters input:hover {
+  filter: drop-shadow(0px 0px 5px var(--black));
 }
 @media (max-width: 1023px) {
   .content {
