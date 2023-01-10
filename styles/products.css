@@ -41,7 +41,7 @@ main {
 .content p {
   text-align: center;
   margin: 10px 0px;
-  font-size: 15px;
+  font-size: 1vw;
   max-height: 2vw;
 }
 .content h6 {
@@ -52,7 +52,7 @@ main {
   margin-top: 30px;
 }
 .fa {
-  font-size: 2vw;
+  font-size: 1vw;
   margin: 10px 0px;
 }
 .fa:hover {
@@ -91,11 +91,11 @@ main {
 .box select {
   width: 90%;
   background-color: var(--light-blue);
-  color: var(--white);  
+  color: var(--white);
   border: none;
   font-size: 1.2vw;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-  outline:none;
+  outline: none;
 }
 .filters input {
   background: var(--light-blue);
@@ -111,41 +111,40 @@ main {
   .content {
     width: 45%;
   }
-  
 }
 @media (max-width: 767px) {
   .content {
     width: 100%;
   }
-  .gallery{
+  .gallery {
     width: 100%;
   }
-  .content h6{
-    margin-top:40px;
+  .content h6 {
+    margin-top: 40px;
   }
-  .fa{
-    font-size:5vw;
+  .fa {
+    font-size: 5vw;
   }
-  main{
+  main {
     flex-direction: column;
   }
-  .filters{
-    width:90%;
+  .filters {
+    width: 90%;
     margin: 0 auto;
     max-height: 40vw;
-  } 
-  form{
+  }
+  form {
     display: flex;
     flex-direction: column;
   }
-  form select{
-    margin-top:3vh;
+  form select {
+    margin-top: 3vh;
     width: 100%;
   }
-  form input{
-    margin-top:3vh;
+  form input {
+    margin-top: 3vh;
   }
-  .box select{
-    font-size:4vw;
+  .box select {
+    font-size: 4vw;
   }
 }
