@@ -366,7 +366,7 @@ footer h4 {
   .nav-links ul li {
     display: block;
     margin-top: 1.5vh;
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
   .nav-links ul li:hover::after {
     width: 30%;

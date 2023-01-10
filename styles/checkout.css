@@ -40,14 +40,14 @@ section {
   background-color: var(--blue);
   border-radius: 20px;
   margin: 10px;
-  height: 30vh;
+  height: 35vh;
 }
 .product-image {
   width: 30vh;
 }
 .product-image img {
   border-radius: 20px 0px 0px 20px;
-  height: 30vh;
+  height: 35vh;
   width: 100%;
 }
 .product-info {
