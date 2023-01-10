@@ -30,7 +30,7 @@ header {
   position: absolute;
   text-align: center;
   justify-content: center;
-  color:#bbe1fa;
+  color:var(--permanent-white)
 }
 .main-heading h1 {
   font-size: 6vw;
@@ -58,7 +58,7 @@ header {
   border: none;
   outline: none;
   cursor: pointer;
-  color: #bbe1fa;
+  color: var(--permanent-white);    
   padding: 10px 50px;
   letter-spacing: 1px;
   border-radius: 0px 10px 10px 0px;
