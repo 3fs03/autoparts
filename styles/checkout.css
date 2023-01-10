@@ -186,6 +186,7 @@ sup {
 }
 .purchase-section label {
   cursor: pointer;
+  color: #bbe1fa;
 }
 .terms:hover {
   text-decoration: underline;
@@ -193,12 +194,12 @@ sup {
 .purchase {
   margin: 5vh auto;
   font-size: 2vw;
-  background-color: var(--white);
-  color: var(--black);
+  background-color: #bbe1fa;
+  color: #1b262c;
   border: none;
   border-radius: 5px;
 }
 .purchase:hover {
-  filter: drop-shadow(0px 0px 10px var(--black));
+  filter: drop-shadow(0px 0px 10px #1b262c);
   cursor: pointer;
 }
