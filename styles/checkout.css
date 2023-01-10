@@ -142,6 +142,9 @@ sup {
   font-size: 1.5vw;
   margin: 10px 0px;
 }
+.payment-info label {
+  font-size: 1.5vw;
+}
 .address select {
   width: 100%;
   font-size: 1.5vw;
@@ -159,6 +162,10 @@ sup {
 .purchase-section label {
   cursor: pointer;
   color: var(--permanent-white);
+  font-size: 1.5vw;
+}
+.terms {
+  font-size: 1.5vw;
 }
 .terms:hover {
   text-decoration: underline;
