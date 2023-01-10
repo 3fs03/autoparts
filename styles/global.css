@@ -296,7 +296,7 @@ footer h4 {
     font-size:3vw;
   }
   .fa-sun{
-    font-size:3vw;
+    font-size:3 vw;
   }
 }
 
@@ -371,9 +371,7 @@ footer h4 {
     top: 7.8vh;
   }
   .nav-links ul li {
-    display: block;
-    margin-top: 1.5vh;
-    font-size:8vw;
+    font-size:7.5vw;
   }
   .nav-links.active{
     height: 45vh;
