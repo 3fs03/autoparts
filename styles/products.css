@@ -8,7 +8,7 @@ main {
   font-size: 30px;
   margin-top: 10px;
   height: 70px;
-  color:#bbe1fa;  
+  color:var(--permanent-white);    
 }
 .gallery {
   display: flex;
@@ -45,7 +45,7 @@ main {
   margin: 10px 0px;
   font-size: 1vw;
   max-height: 2vw;
-  color:#bbe1fa;
+  color:var(--permanent-white);
 }
 .content h6 {
   font-size: 30px;
@@ -55,9 +55,9 @@ main {
   margin-top: 30px;
 }
 .fa {
-  font-size: 1vw;
+  font-size: 1.5vw;
   margin: 10px 0px;
-  color:#bbe1fa;
+  color:var(--permanent-white);
 }
 .fa:hover {
   transform: scale(1.3);
