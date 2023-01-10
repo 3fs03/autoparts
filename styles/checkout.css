@@ -43,7 +43,7 @@ section {
   height: 35vh;
 }
 .product-image {
-  width: 30vh;
+  width: 25%;
 }
 .product-image img {
   border-radius: 20px 0px 0px 20px;
