@@ -111,7 +111,8 @@ section {
   font-size: 2vw;
 }
 .person-info,
-.address {
+.address,
+.payment-info {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -121,8 +122,11 @@ section {
   height: 30vh;
   padding: 20px;
 }
-.person-info sup,
-.address sup {
+.payment-info {
+  flex-direction: column !important;
+  height: 50vh;
+}
+sup {
   color: #f22;
 }
 .person-info label,
@@ -130,14 +134,16 @@ section {
   font-size: 1.5vw;
 }
 .person-info input,
-.address input {
+.address input,
+.payment-info input {
   font-size: 1.5vw;
   margin: 10px 0px;
   background-color: #bbe1fa;
   color: #1b262c;
 }
 .person-info input:focus,
-.address input:focus {
+.address input:focus,
+.payment-info input:focus {
   outline: none;
   filter: drop-shadow(0px 0px 10px #1b262c);
 }
@@ -157,17 +163,43 @@ section {
 .address select option {
   overflow-y: scroll;
 }
-.container-1-1,
-.container-1-2,
-.container-2-1,
-.container-2-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.container-1,
-.container-2 {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 80%;
+  margin: 2vh auto;
+}
+.container-row {
+  flex-direction: row;
+  width: 64%;
+  justify-content: space-between;
+}
+.container-row input {
+  width: 85%;
+}
+.purchase-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.purchase-section label {
+  cursor: pointer;
+  color: #bbe1fa;
+}
+.terms:hover {
+  text-decoration: underline;
+}
+.purchase {
+  margin: 5vh auto;
+  font-size: 2vw;
+  background-color: #bbe1fa;
+  color: #1b262c;
+  border: none;
+  border-radius: 5px;
+}
+.purchase:hover {
+  filter: drop-shadow(0px 0px 10px #1b262c);
+  cursor: pointer;
 }
