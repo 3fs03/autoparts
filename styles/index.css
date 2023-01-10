@@ -30,6 +30,7 @@ header {
   position: absolute;
   text-align: center;
   justify-content: center;
+  color:#bbe1fa;
 }
 .main-heading h1 {
   font-size: 6vw;
@@ -52,12 +53,12 @@ header {
   border-radius: 10px 0px 0px 10px;
 }
 .search-bar button {
-  background: var(--light-blue);
+  background: #3282b8;
   font-weight: 700;
   border: none;
   outline: none;
   cursor: pointer;
-  color: var(--white);
+  color: #bbe1fa;
   padding: 10px 50px;
   letter-spacing: 1px;
   border-radius: 0px 10px 10px 0px;

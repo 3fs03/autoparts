@@ -133,6 +133,18 @@ body {
   background-color: var(--black);
   color: var(--white);
 }
+body.active{
+  --black: #bbe1fa;
+  --blue: #3282b8;
+  --light-blue: #0f4c75;
+  --white: #1b262c;
+}
+.fa-moon{
+  font-size:3vw;
+}
+.fa-sun{
+  font-size:3vw;
+}
 header {
   width: 100%;
 }
@@ -273,6 +285,12 @@ footer h4 {
     font-size: 40%;
     margin-right: 5px;
   }
+  .fa-moon{
+    font-size:3.5vw;
+  }
+  .fa-sun{
+    font-size:3.5vw;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -301,7 +319,7 @@ footer h4 {
     left: 0;
     top: 8vh;
     width: 100%;
-    background-color: var(--light-blue);
+    background-color: #3282b8;
     z-index: 999;
     text-align: center;
     transition: 0.2s;
@@ -309,7 +327,7 @@ footer h4 {
   }
   .nav-links ul li {
     display: block;
-    margin-top: 5vh;
+    margin-top: 2.5vh;
   }
   .nav-links ul li:hover::after {
     width: 30%;
@@ -328,6 +346,17 @@ footer h4 {
     font-size: 23%;
     margin-right: 5px;
   }
+  .hamburger .line.active{
+    background:black;
+  }
+  .fa-moon
+  {
+    font-size:4.5vw;
+  }
+  .fa-sun{
+    font-size:4.5vw;
+  }
+
 }
 @media only screen and (max-width: 489px) {
   .nav-links {
@@ -340,5 +369,13 @@ footer h4 {
   }
   .useful li {
     margin-top: 5vw;
+  }
+
+  .fa-moon
+  {
+    font-size:5.5vw;
+  }
+  .fa-sun{
+    font-size:5.5vw;
   }
 }
