@@ -38,14 +38,14 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./products.html">Products</a></li>
             <li><a href="./checkout.html">Checkout</a></li>
-            <li> <a href="./about.html">About us</a></li>
-            <li> <a href="./register.html">Register</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./register.html">Register</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <form action="./index.html" method="post">
+      <form id="form1">
         <h1>Products</h1>
         <section class="product-section">
           <div class="product">
@@ -108,7 +108,7 @@
         <section class="info-section">
           <div class="person-info">
             <div class="container">
-              <div class="container">
+              <div class="container-1">
                 <label for="first_name">First Name<sup>*</sup></label>
                 <input
                   type="text"
@@ -116,9 +116,9 @@
                   id="first_name"
                   placeholder="Ivan"
                   required
-                />
+                /><small>Error</small>
               </div>
-              <div class="container">
+              <div class="container-1">
                 <label for="last_name">Last Name<sup>*</sup></label>
                 <input
                   type="text"
@@ -126,11 +126,11 @@
                   id="last_name"
                   placeholder="Ivanov"
                   required
-                />
+                /><small>Error</small>
               </div>
             </div>
             <div class="container">
-              <div class="container">
+              <div class="container-1">
                 <label for="number">Phone Number<sup>*</sup></label>
                 <input
                   type="tel"
@@ -138,9 +138,9 @@
                   id="number"
                   placeholder="0888888888"
                   required
-                />
+                /><small>Error</small>
               </div>
-              <div class="container">
+              <div class="container-1">
                 <label for="email">E-mail<sup>*</sup></label>
                 <input
                   type="email"
@@ -148,13 +148,13 @@
                   id="email"
                   placeholder="ivan_ivanov@abv.bg"
                   required
-                />
+                /><small>Error</small>
               </div>
             </div>
           </div>
           <div class="address">
             <div class="container">
-              <div class="container">
+              <div class="container-1">
                 <label for="city">City<sup>*</sup></label>
                 <select name="city" id="city" required>
                   <option value="null">Choose city</option>
@@ -173,22 +173,21 @@
                   <option value="yambol">Yambol</option>
                   <option value="veliko_tarnovo">Veliko Tarnovo</option>
                 </select>
+                <small>Error</small>
               </div>
-              <div class="container">
+              <div class="container-1">
                 <label for="post_code">Post Code<sup>*</sup></label>
                 <input
-                  type="number"
+                  type="text"
                   name="post_code"
                   id="post_code"
                   placeholder="1234"
-                  min="1000"
-                  max="9999"
                   required
-                />
+                /><small>Error</small>
               </div>
             </div>
             <div class="container">
-              <div class="container">
+              <div class="container-1">
                 <label for="boulevard">Boulevard<sup>*</sup></label>
                 <input
                   type="text"
@@ -196,9 +195,9 @@
                   id="boulevard"
                   placeholder="bul. Bulgaria"
                   required
-                />
+                /><small>Error</small>
               </div>
-              <div class="container">
+              <div class="container-1">
                 <label for="street">Street<sup>*</sup></label>
                 <input
                   type="text"
@@ -206,7 +205,7 @@
                   id="street"
                   placeholder="ul. Ivan Ivanov"
                   required
-                />
+                /><small>Error</small>
               </div>
             </div>
           </div>
@@ -215,22 +214,29 @@
         <section class="payment-section">
           <div class="payment-info">
             <div class="container">
-              <div class="container">
+              <div class="container-1">
                 <label for="card-number">Credit Card Number<sup>*</sup></label>
                 <input
                   type="text"
                   name="card-number"
-                  id="card-number"
+                  id="card_number"
+                  placeholder="Card Number"
                   required
-                />
+                /><small>Error</small>
               </div>
             </div>
             <div class="container container-row">
-              <div class="container">
+              <div class="container-1">
                 <label for="expire">Expiration Date<sup>*</sup></label>
-                <input type="text" name="expire" id="expire" required />
+                <input
+                  type="text"
+                  name="expire"
+                  id="expire"
+                  placeholder="MM/YY"
+                  required
+                /><small>Error</small>
               </div>
-              <div class="container">
+              <div class="container-1">
                 <label for="cvc">CVC<sup>*</sup></label>
                 <input
                   type="text"
@@ -238,14 +244,21 @@
                   id="cvc"
                   min="100"
                   max="999"
+                  placeholder="Security Code"
                   required
-                />
+                /><small>Error</small>
               </div>
             </div>
             <div class="container">
-              <div class="container">
+              <div class="container-1">
                 <label for="name">NAME ON THE CARD<sup>*</sup></label>
-                <input type="text" name="name" id="name" required />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                /><small>Error</small>
               </div>
             </div>
           </div>
@@ -256,9 +269,9 @@
             <label for="eula"
               >Consent the
               <span class="terms">Terms and Conditions<sup>*</sup></span></label
-            >
+            ><br /><small>Error</small>
           </div>
-          <input type="submit" value="Purchase" class="purchase" />
+          <button type="submit" id="submit" class="purchase">Purchase</button>
         </section>
       </form>
     </main>
@@ -283,5 +296,6 @@
       </div>
     </footer>
     <script src="./scripts/DarkMode.js"></script>
+    <script src="./scripts/form_validation.js"></script>
   </body>
 </html>
