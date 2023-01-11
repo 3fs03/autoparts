@@ -12,6 +12,7 @@ const card_number = document.getElementById("card_number");
 const expire = document.getElementById("expire");
 const cvc = document.getElementById("cvc");
 const name_on_card = document.getElementById("name");
+const eula = document.getElementById("eula");
 
 console.log(form);
 
@@ -113,6 +114,32 @@ function checkInputs() {
   } else {
     setSuccessFor(first_name);
   }
+
+  const checkbox = document.getElementById("checkbox");
+  if (eula.checked === false) {
+    setErrorAgreement(eula, "Please consent to the agreement");
+  } else {
+    setSuccessAgreement(eula);
+  }
+
+  if (
+    first_name.parentElement.classList.contains("success") &&
+    last_name.parentElement.classList.contains("success") &&
+    phone_number.parentElement.classList.contains("success") &&
+    email.parentElement.classList.contains("success") &&
+    city.parentElement.classList.contains("success") &&
+    post_code.parentElement.classList.contains("success") &&
+    boulevard.parentElement.classList.contains("success") &&
+    street.parentElement.classList.contains("success") &&
+    card_number.parentElement.classList.contains("success") &&
+    expire.parentElement.classList.contains("success") &&
+    cvc.parentElement.classList.contains("success") &&
+    name_on_card.parentElement.classList.contains("success") &&
+    checkbox.classList.contains("success")
+  ) {
+    window.location.replace("./index.html");
+    console.log("Success");
+  }
 }
 
 function setErrorFor(input, message) {
@@ -120,8 +147,8 @@ function setErrorFor(input, message) {
   const small = container_1.querySelector("small");
 
   small.innerText = message;
-
   container_1.className = "container-1 error";
+
   input.focus();
 }
 
@@ -129,6 +156,22 @@ function setSuccessFor(input) {
   const container_1 = input.parentElement;
 
   container_1.className = "container-1 success";
+}
+
+function setErrorAgreement(eula, message) {
+  const text = document.getElementById("agree");
+  const checkbox = document.getElementById("checkbox");
+
+  text.innerText = message;
+  checkbox.classList = "purchase-section error";
+
+  eula.focus();
+}
+
+function setSuccessAgreement(eula) {
+  const checkbox = document.getElementById("checkbox");
+
+  checkbox.classList = "purchase-section success";
 }
 
 function isEmail(email) {
@@ -142,7 +185,7 @@ function validateExpiryDate(expireDate) {
 }
 
 function validateName(name) {
-  return /^[A-Z][a-zA-z]{1,50}$/.test(name);
+  return /^[A-Z][a-zA-z]{2,50}$/.test(name);
 }
 
 function validatePhone(phone) {

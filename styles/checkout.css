@@ -163,6 +163,12 @@ sup {
   color: var(--permanent-white);
   font-size: 1.5vw;
 }
+.purchase-section.error input {
+  filter: drop-shadow(0px 0px 10px red);
+}
+.purchase-section.error small {
+  visibility: visible;
+}
 .terms {
   font-size: 1.5vw;
 }
