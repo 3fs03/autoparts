@@ -370,6 +370,9 @@ footer h4 {
   .fa-sun {
     font-size: 4vw;
   }
+  .hamburger .line.active{
+    background:black;
+  }
 }
 
 @media only screen and (max-width: 767px) {
