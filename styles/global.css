@@ -4,6 +4,7 @@
   --light-blue: #3282b8;
   --white: #bbe1fa;
   --permanent-white: #bbe1fa;
+  --permanent-black: #1b262c;
 }
 html,
 body,
@@ -144,9 +145,9 @@ body.active {
 select {
   border: none;
   border-radius: 0.25em;
-  color: #1b262c;
+  color: var(--permanent-black);
   line-height: 1.1;
-  background-color: #bbe1fa;
+  background-color: var(--permanent-white);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   outline: none;
   overflow-y: auto;
@@ -155,12 +156,12 @@ select option {
   overflow-y: scroll;
 }
 input {
-  background-color: #bbe1fa;
-  color: #1b262c;
+  background-color: var(--permanent-white);
+  color: var(--permanent-black);
 }
 input:focus {
   outline: none;
-  filter: drop-shadow(0px 0px 10px #1b262c);
+  filter: drop-shadow(0px 0px 10px var(--permanent-black));
 }
 .container {
   display: flex;
@@ -174,24 +175,16 @@ input:focus {
   width: 64%;
   justify-content: space-between;
 }
-.fa-moon {
-  font-size: 2.5vw;
-  cursor: pointer;
-}
-.fa-sun {
-  font-size: 2.5vw;
-  cursor: pointer;
-}
 header {
   width: 100%;
 }
 .logo {
   display: flex;
   align-items: center;
-  height: 12vh;
+  height: 10vh;
 }
 .logo img {
-  height: 12vh;
+  height: 10vh;
 }
 nav {
   display: flex;
@@ -199,6 +192,7 @@ nav {
   align-items: center;
   padding: 2% 6%;
   background-color: var(--black);
+  height: 5vh;
 }
 .nav-links {
   flex: 1;
@@ -212,6 +206,7 @@ nav {
 .nav-links ul a {
   text-decoration: none;
   color: var(--white);
+  font-size: 0.8em;
 }
 .nav-links ul li:not(:first-child):after {
   content: "";
@@ -226,10 +221,18 @@ nav {
   width: 100%;
 }
 .nav-links ul a:hover {
-  color: white;
+  color: var(--white);
 }
 .nav-links ul a:active {
   color: var(--light-blue);
+}
+.fa-moon {
+  font-size: 1em;
+  cursor: pointer;
+}
+.fa-sun {
+  font-size: 1em;
+  cursor: pointer;
 }
 .hamburger {
   display: none;
@@ -240,6 +243,7 @@ footer {
   text-align: center;
   padding-top: 3%;
   padding-bottom: 3%;
+  color: var(--permanent-white);
 }
 footer img {
   border-radius: 100%;
@@ -248,11 +252,13 @@ footer img {
 footer h3 {
   font-size: 1.5vw;
   margin-top: 50px;
+  color: var(--permanent-white);
 }
 footer h4 {
   font-size: 1vw;
   margin-top: 10px;
   font-weight: 400;
+  color: var(--permanent-white);
 }
 .useful {
   display: flex;
@@ -264,14 +270,14 @@ footer h4 {
   font-size: 1vw;
 }
 .useful li:hover {
-  color: white;
+  color: var(--permanent-white);
   cursor: pointer;
 }
 .useful li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: var(--white);
+  background: var(--permanent-white);
   display: block;
   margin: auto;
   transition: 0.4s;
@@ -308,8 +314,41 @@ footer h4 {
   .logo img {
     height: 8vh;
   }
-  nav ul li a {
-    font-size: 2.5vw;
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+  }
+  .nav-links.active {
+    height: 55vh;
+    margin-top: 1vh;
+  }
+  .nav-links {
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 8vh;
+    width: 100%;
+    background-color: #3282b8;
+    z-index: 999;
+    text-align: center;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .nav-links ul li {
+    display: block;
+    margin-top: 1.2vh;
+  }
+  .nav-links ul li:hover::after {
+    width: 30%;
+  }
+  .nav-links ul li a {
+    font-size: 4vw;
   }
   footer h3 {
     font-size: 50%;
@@ -326,10 +365,10 @@ footer h4 {
     margin-right: 5px;
   }
   .fa-moon {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .fa-sun {
-    font-size: 3 vw;
+    font-size: 4vw;
   }
 }
 
@@ -339,39 +378,6 @@ footer h4 {
   }
   .logo img {
     height: 6vh;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-  .hamburger .line {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 5px 0;
-  }
-  .nav-links.active {
-    height: 55vh;
-  }
-  .nav-links {
-    height: 0;
-    position: absolute;
-    left: 0;
-    top: 8vh;
-    width: 100%;
-    background-color: #3282b8;
-    z-index: 999;
-    text-align: center;
-    transition: 0.2s;
-    overflow: hidden;
-  }
-  .nav-links ul li {
-    display: block;
-    margin-top: 1.5vh;
-    font-size: 5.5vw;
-  }
-  .nav-links ul li:hover::after {
-    width: 30%;
   }
   footer h3 {
     font-size: 30%;
@@ -390,6 +396,10 @@ footer h4 {
   .hamburger .line.active {
     background: black;
   }
+  .nav-links.active {
+    height: 55vh;
+    margin-top: -1vh;
+  }
   .fa-moon {
     font-size: 4.5vw;
   }
@@ -402,10 +412,11 @@ footer h4 {
     top: 7.8vh;
   }
   .nav-links ul li {
-    font-size: 7.5vw;
+    font-size: 7vw;
   }
   .nav-links.active {
     height: 45vh;
+    margin-top: -1vh;
   }
   .useful {
     flex-direction: column;
