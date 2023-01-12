@@ -31,11 +31,11 @@ const disableDarkMode = () => {
 };
 
 if (darkMode === "enabled") {
-  enableDarkMode(); // set state of darkMode on page load
+  enableDarkMode(); 
 }
 
 toggleBtn.addEventListener("click", (e) => {
-  darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
+  darkMode = localStorage.getItem("dark-mode"); 
   if (darkMode === "disabled") {
     enableDarkMode();
   } else {
