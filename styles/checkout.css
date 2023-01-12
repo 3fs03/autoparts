@@ -338,7 +338,7 @@ small {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 85vh;
   }
   .product:not(:first-child) {
     margin-top: 5vh;
@@ -417,7 +417,7 @@ small {
     width: 100%;
   }
   .payment-info {
-    height: 30vh;
+    height: 45vh;
   }
   .purchase-section #eula {
     width: 4vw;
